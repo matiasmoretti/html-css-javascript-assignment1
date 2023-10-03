@@ -1,0 +1,202 @@
+https://www.panago.com/menu/pizzas/cyo/create-your-own
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matias da Silva Moretti & José Pio de Santana Filho" />
+    <meta name="description" content="It's a page created for the Assignment1 that enable a user to order one or more pizzas">    
+    <link href="./styles/styles.css" rel="stylesheet"/> 
+    <title>Assignment 1 - Pizza Order</title>
+</head>
+<body>
+    <header>
+        <img src="images/mini-figure.png" width="100" height="50" alt="Georgian's Pizza Delivery Logo">
+        <h1>Georgian's Pizza Delivery</h1>
+        <hr>
+    </header>
+    <main>
+        <Section>				
+            <form action="subscribe.php" method="GET">
+                <h2>Your Order</h2>
+                <h2>Order Options</h2>                
+                <p>Required fields are followed by <span aria-label="required">*</span>.</p>
+                <p>
+                    <label for="qtyPizzas">Number of Pizzas<strong><span aria-label="required">*</span></strong></label></label>
+                    <input name="qtyPizzas" type="number" id="qtyPizzas" required />
+                </p>
+                
+                <fieldset>
+                    <legend>Select your pizza size:</legend>                   
+                    <div>
+                        <input type="radio" id="small" name="size" value="small" checked />
+                        <label for="small">Small (4 Slices)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medium" name="size" value="medium" />
+                        <label for="medium">Medium (6 Slices)</label>
+                    </div>                    
+                    <div>
+                        <input type="radio" id="large" name="size" value="large" />
+                        <label for="large">Large (8 Slices)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="jumbo" name="size" value="jumbo" />
+                        <label for="jumbo">Jumbo (12 Slices)</label>
+                    </div>                        
+                </fieldset>
+                
+                <p>
+                    <label for="shape">Shape</label>
+                    <select id="shape" name="shape">
+                        <option value="Round">Round</option>
+                        <option value="Square">Square</option>
+                    </select>
+                </p>       
+
+                <fieldset>
+                    <legend>Toppings</legend>
+                        <div>
+                            <input type="checkbox" id="horns" name="horns" />
+                            <label for="horns">Horns</label>
+                        </div>                    
+                        <div>
+                            <input type="checkbox" id="horns" name="horns" />
+                            <label for="horns">Horns</label>
+                        </div>                    
+                        <div>
+                            <input type="checkbox" id="horns" name="horns" />
+                            <label for="horns">Horns</label>
+                        </div>                    
+                        <div>
+                            <input type="checkbox" id="horns" name="horns" />
+                            <label for="horns">Horns</label>
+                        </div>                    
+                        <div>
+                            <input type="checkbox" id="horns" name="horns" />
+                            <label for="horns">Horns</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="horns" name="horns" />
+                            <label for="horns">Horns</label>
+                        </div>                    
+                        <div>
+                            <input type="checkbox" id="horns" name="horns" />
+                            <label for="horns">Horns</label>
+                        </div>                    
+                        <div>
+                            <input type="checkbox" id="horns" name="horns" />
+                            <label for="horns">Horns</label>
+                        </div>                    
+                        <div>
+                            <input type="checkbox" id="horns" name="horns" />
+                            <label for="horns">Horns</label>
+                        </div>                    
+                        <div>
+                            <input type="checkbox" id="horns" name="horns" />
+                            <label for="horns">Horns</label>
+                        </div>                                                                                                                                                                                                                                                                
+                </fieldset>
+                
+                   
+
+ 
+                <p>
+                    <label for="toppings">Toppings<strong><span aria-label="required">*</span></strong></label></label>
+                    <input name="toppings" type="text" id="toppings" required />
+                </p> 
+                
+                <fieldset>
+                    <legend>Select your crust:</legend>                   
+                    <div>
+                        <input type="radio" id="small" name="size" value="small" checked />
+                        <label for="small">Original Crust</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medium" name="size" value="medium" />
+                        <label for="medium">Thin Crust</label>
+                    </div>                    
+                    <div>
+                        <input type="radio" id="large" name="size" value="large" />
+                        <label for="large">Multigrain Crust</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="jumbo" name="size" value="jumbo" />
+                        <label for="jumbo">Multigrain Thin Crust</label>
+                    </div>                        
+                    <div>
+                        <input type="radio" id="jumbo" name="size" value="jumbo" />
+                        <label for="jumbo">Gluten Free Crust</label>
+                    </div>                                            
+                </fieldset>
+                <p>
+                    <label for="delivery">Delivery<strong><span aria-label="required">*</span></strong></label></label>
+                    <input name="delivery" type="text" id="delivery" required />
+                </p>                                   
+                <p>
+                    <label for="obs">Obsservations<strong><span aria-label="required">*</span></strong></label></label>
+                    <input name="obs" type="text" id="obs" required />
+                </p>                                                   
+        </Section>
+        <Section>
+            <h2>Contact information</h2>
+            <p>
+            <label for="name">
+                <span>Name: </span>
+                <strong><span aria-label="required">*</span></strong>
+            </label>
+            <input type="text" id="name" name="username" required>
+            </p>
+            <p>
+            <label for="mail">
+                <span>E-mail: </span>
+                <strong><span aria-label="required">*</span></strong>
+            </label>
+            <input type="email" id="mail" name="usermail" required>
+            </p>
+            <p>
+            <label for="pwd">
+                <span>Password: </span>
+                <strong><span aria-label="required">*</span></strong>
+            </label>
+            <input type="password" id="pwd" name="password" required>
+            </p>
+        </section>        
+        <section>
+            <h2>Payment information</h2>
+            <p>
+              <label for="card">
+                <span>Card type:</span>
+              </label>
+              <select id="card" name="usercard">
+                <option value="visa">Visa</option>
+                <option value="mc">Mastercard</option>
+                <option value="amex">American Express</option>
+              </select>
+            </p>
+            <p>
+              <label for="number">
+                <span>Card number:</span>
+                <strong><span aria-label="required">*</span></strong>
+              </label>
+                <input type="tel" id="number" name="cardnumber" required>
+            </p>
+            <p>
+              <label for="expiration">
+                <span>Expiration date:</span>
+                <strong><span aria-label="required">*</span></strong>
+              </label>
+              <input type="text" id="expiration" required="true" placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$">
+            </p>
+        </section>
+        <section>
+            <p> <button type="submit">Validate the payment</button> </p>
+        </section>        
+    </form>        
+    </main>
+    <footer>
+        <p><small>©Georgian's Pizza Delivery - 2023</small></p>
+    </footer>
+</body>
+</html>
