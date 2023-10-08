@@ -1,18 +1,56 @@
+@charset "UTF-8";
+
 body {
-    text-align: center;
+	font-family: Calibri, Verdana, sans-serif;
+	color: #333;
+	margin: 0 auto;
+	min-width: 768px;
+	max-width: 1024px;
 }
 
-h1 {
-    color: #8f342e;
-    font-family: sans-serif;
-    font-size: 250%;
+h1, h2 {
+	color: #800000;
 }
 
-h2 {
-    color: #8f342e;
-    font-family: sans-serif;
+h3 {
+	color: green;
 }
 
-p {
-    text-align: left;
+img {
+	margin-top:10px
+}
+
+header {
+	text-align: center;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+main section {
+	width: 40%;
+}
+
+footer {
+	text-align: center;
+}
+
+button {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 600;
+	width: 200px;
+	height: 30px;
+}
+
+.buttonSuccess{
+	color: white;
+	background-color: green;
+}
+
+.buttonReset{
+	color: white;
+	background-color: #800000;
 }
