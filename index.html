@@ -1,3 +1,7 @@
+<!--
+                        <a href="https://www.flaticon.com/free-icons/draw" title="draw icons">Draw icons created by lakonicon - Flaticon</a>
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -22,11 +26,11 @@
             <Section>				
                 <h2>Create your own pizza!</h2>
                 <small>Required fields are followed by *.</small>
-                <!-- Starting the form -->
+                <!-- Starting "Delivery Order" form here -->
                 <form action="subscribe.php" method="GET">
                     <br>   
-                    <!-- First part - Configuring Pizza -->
-                    <h3>Configuring your pizza</h3>                
+                    <!-- Section 1 - Configuring -->
+                    <h3>Configuring your pizza</h3>
                     <p>
                         <label for="qtyPizzas">Number of Pizzas</label><span>*</span>
                         <input name="qtyPizzas" value="1" type="number" id="qtyPizzas" min="1" required>
@@ -38,6 +42,7 @@
                             <option value="square">Square</option>
                         </select>
                     </p>    
+                    <!-- Configuring subsection - Pizza size fieldset with radio buttons -->
                     <fieldset>
                         <legend>| Pizza size |</legend>                   
                         <div>
@@ -58,9 +63,10 @@
                         </div>                        
                     </fieldset>     
                     <br>          
-                    <!-- Second part - Toppings -->
+                    <!-- Section 2 - Toppings -->
                     <h3>Choose your toppings</h3>
                     <p>All pizzas came with cheese and tomato sauce, but you can custom your pizza adding some toppings.</p>
+                    <!-- Toppings subsection - Meals fieldset with checkboxes -->
                     <fieldset>
                         <legend>| Meals |</legend>
                         <div>
@@ -88,6 +94,7 @@
                             <label for="chicken">Roasted Chicken</label>
                         </div>                       
                     </fieldset>
+                    <!-- Toppings subsection - Cheese fieldset with checkboxes -->
                     <fieldset>
                         <legend>| Cheese |</legend>
                         <div>
@@ -111,6 +118,7 @@
                             <label for="parmesan">Parmesan</label>
                         </div>                       
                     </fieldset> 
+                    <!-- Toppings subsection - Veg fieldset with checkboxes -->
                     <fieldset>
                         <legend>| Veg |</legend>
                         <div>
@@ -135,8 +143,9 @@
                         </div>                       
                     </fieldset> 
                     <br>                                     
-                    <!-- Third part - Crust -->
+                    <!-- Section 3 - Crust -->
                     <h3>Choose your crust</h3>
+                    <!-- Toppings subsection - Crust fieldset with radio buttons -->
                     <fieldset>
                         <div>
                             <input type="radio" id="original" name="crust" value="original" checked>
@@ -160,7 +169,30 @@
                         </div>                                            
                     </fieldset> 
                     <br>                   
-                    <!-- Fourth part - Delivery details -->
+                    <!-- Section 4 - Additional information fields -->
+                    <h3>Personal Information</h3>                                                                              
+                    <p>
+                        <label for="name">Name</label><span>*</span>
+                        <input type="text" id="name" name="username" placeholder="Type your full name here" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone</label><span>*</span>
+                        <input type="tel" id="phone" name="phone" maxlength="13" placeholder="(000)000-0000" required>                    
+                    </p>
+                    <p>
+                        <label for="mail">E-mail</label>
+                        <input type="email" id="mail" name="mail" placeholder="Type your email here">
+                    </p>
+                    <p>
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" placeholder="Type your address here">
+                    </p>                                      
+                    <p>
+                        <label for="promo">Promo Code</label>                 
+                        <input type="password" id="promo" maxlength="6" placeholder="000000" name="promo">
+                    </p>
+                    <br> 
+                    <!-- Section 5 - Delivery details fields -->
                     <h3>Delivery Details</h3>
                     <p>
                         <label for="delivery">What delivery form do you whant?</label>
@@ -170,31 +202,12 @@
                             <option value="eatin">Eat-In</option>                        
                         </select>                    
                     </p>                
-                    <br>                
-                    <!-- Fifth part - Additional information fields -->
-                    <h3>Additional Information</h3>                                                                              
                     <p>
-                        <label for="name">Name</label><span>*</span>
-                        <input type="text" id="name" name="username" required>
-                    </p>
-                    <p>
-                        <label for="phone">Phone</label><span>*</span>
-                        <input type="tel" id="phone" name="phone" maxlength="13" placeholder="(000)000-0000" required>                    
-                    </p>
-                    <p>
-                        <label for="mail">E-mail</label><span>*</span>
-                        <input type="email" id="mail" name="usermail" required>
-                    </p>
-                    <p>
-                        <label for="promo">Promo Code</label>                 
-                        <input type="password" id="promo" name="promo">
-                    </p>
-                    <p>
-                        <label for="comments">Additional comments</label>
+                        <label for="comments">Delivery Instructions</label>
                         <textarea id="comments" name="comments" rows="4" cols="50"></textarea>                    
-                    </p>                 
-                    <br> 
-                    <!-- Sixth part - Payment fields -->
+                    </p>                                     
+                    <br>                
+                    <!-- Section 6 - Payment fields -->
                     <h3>Payment Information</h3>
                     <p>
                         <label for="card">Card type</label>
@@ -213,13 +226,14 @@
                         <input type="text" id="expiration" placeholder="MM/YY" maxlength="5" pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" required>
                     </p>
                     <br>  
-                    <!-- Seventh part - Buttons -->
+                    <!-- Section 7 - Buttons -->
                     <p>
                         <button class="buttonSuccess" type="submit">Checkout</button>
                     </p>
                     <p>
                         <button class="buttonReset" type="reset">Reset</button>
                     </p>                    
+                <!-- Finishing "Delivery Order" form here -->
                 </form>  
             </section>   
         </main>
